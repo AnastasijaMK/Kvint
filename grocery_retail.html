@@ -1,0 +1,747 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Kvint - Голосовой ассистент для продуктового ритейла</title>
+
+    <link rel="stylesheet" href="css/style-lib.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header__left">
+                <div class="header__logo">
+                    <a href="index.html" title="Kvint - voice assistant for business">
+                            <span class="header__logo--img">
+                                <picture class="dark-theme">
+                                    <img src="images/logo.svg" alt="Kvint - voice assistant for business">
+                                </picture>
+                                <picture class="light-theme">
+                                    <img src="images/logo_light.svg" alt="Kvint - voice assistant for business">
+                                </picture>
+                            </span>
+                        <span class="header__logo--separate"></span>
+                        <span class="header__logo--text">voice assistant<br> for business</span>
+                    </a>
+                </div>
+                <div class="header__menu no-md">
+                    <nav>
+                        <ul>
+                            <li class="inner--list">
+                                <a href="javascript:void(0);">
+                                    <span>Продукты</span>
+                                </a>
+                                <div class="menu__list">
+                                    <div class="menu__list--block">
+                                        <a href="ivr.html">
+                                            <span class="block--img">
+                                                <img src="images/header_menu_icon2.png" alt="Виртуальный ассистент для замены IVR">
+                                            </span>
+                                            <span class="block--title"><span>Виртуальный ассистент<br> для замены IVR</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--block">
+                                        <a href="promotion.html">
+                                            <span class="block--img">
+                                                <img src="images/header_menu_icon3.png" alt="Мобильный ассистент для продвижения товаров и услуг">
+                                            </span>
+                                            <span class="block--title"><span>Мобильный ассистент<br> для продвижения товаров<br> и услуг</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--block">
+                                        <a href="call_center.html">
+                                            <span class="block--img">
+                                                <img src="images/header_menu_icon4.png" alt="Виртуальный колл-центр с готовыми сценариями">
+                                            </span>
+                                            <span class="block--title"><span>Виртуальный колл-центр<br> с готовыми сценариями</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--block">
+                                        <a href="grocery_retail.html">
+                                            <span class="block--img">
+                                                <img src="images/header_menu_icon5.png" alt="Голосовой ассистент для продуктового ритейла">
+                                            </span>
+                                            <span class="block--title"><span>Голосовой ассистент<br> для продуктового ритейла</span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#form">
+                                    <span>Контакты</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#news">
+                                    <span>Новости</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="header__phone no-md">
+                    <a href="tel:+74992881890" title="+7 (499) 288-18-90">+7 (499) 288-18-90</a>
+                </div>
+                <div class="header__language">
+                    <a href="#" class="active">
+                        <span>Ru</span>
+                    </a>
+                    <div class="header__language--separator no-xs">|</div>
+                    <a href="#">
+                        <span>En</span>
+                    </a>
+                </div>
+                <div class="header__burger md">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main data-main="grocery">
+        <section id="intro">
+            <div class="container">
+                <div class="intro__text">
+                    <h1>Голосовой ассистент <br> для продуктового ритейла</h1>
+                    <p class="intro__info">Управляй покупками в мобильных приложениях продуктового ритейла</p>
+                    <div class="intro___form">
+                        <form action="">
+                            <label>
+                                <input type="tel" name="PHONE" required placeholder="+_(___) ___ __ __">
+                                <span class="input--error">Заполните это поле</span>
+                            </label>
+                            <button type="submit" class="is-blicked">
+                                <span>Оставить заявку</span>
+                                <span class="button--bg"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="look-video">
+                        <a class="fancybox_link" data-fancybox="media" href="http://www.youtube.com/watch?v=slT1_AAoHzc">
+                            <span>Смотреть видео</span>
+                        </a>
+                    </div>
+                    <button class="leave-request j-leave-request-popup is-blicked">Оставить заявку</button>
+                </div>
+                <div class="intro__picture">
+                    <picture>
+                        <source type="image/webp" srcset="images/grocery_intro_bg_mobile.webp" media="(max-width: 767px)">
+                        <source srcset="images/grocery_intro_bg_mobile.png" media="(max-width: 767px)">
+                        <source type="image/webp" srcset="images/grocery_intro_bg_tablet.webp" media="(max-width: 1199px)">
+                        <source srcset="images/grocery_intro_bg_tablet.png" media="(max-width: 1199px)">
+                        <source type="image/webp" srcset="images/grocery_intro_bg.webp" media="(min-width: 1199px)">
+                        <source srcset="images/grocery_intro_bg.png" media="(min-width: 1199px)">
+                        <img src="images/grocery_intro_bg.png" alt="Голосовой ассистент для продуктового ритейла">
+                    </picture>
+                    <div class="products__picture--bg-front no-md">
+                        <picture>
+                            <img src="images/assistantbg__bg_back.gif" alt="Голосовой ассистент для продуктового ритейла">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>Kvint — кто это?</h2>
+                <p class="about__text">Kvint — это <span class="highlighted"><b>голосовой ассистент</b></span> в мобильных приложениях ритейла для совершения <b>покупок в режиме диалога</b></p>
+                <div class="about__wrap">
+                    <div class="about__block">
+                        <div class="about__block--icon">
+                            <img src="images/grocery_about_icon1.svg" alt="Клиенты">
+                        </div>
+                        <div class="about__block--text">
+                            <span class="about__block--title">Клиенты</span>
+                            <p class="about__block--subtitle">привлечет дополнительных клиентов</p>
+                        </div>
+                    </div>
+                    <div class="about__block">
+                        <div class="about__block--icon">
+                            <img src="images/grocery_about_icon2.svg" alt="Комфорт">
+                        </div>
+                        <div class="about__block--text">
+                            <span class="about__block--title">Комфорт</span>
+                            <p class="about__block--subtitle">повысит лояльность клиентов</p>
+                        </div>
+                    </div>
+                    <div class="about__block">
+                        <div class="about__block--icon">
+                            <img src="images/grocery_about_icon3.svg" alt="Доход">
+                        </div>
+                        <div class="about__block--text">
+                            <span class="about__block--title">Доход</span>
+                            <p class="about__block--subtitle">увеличит средний чек заказов</p>
+                        </div>
+                    </div>
+                    <div class="cloud">Kvint – зачем он нужен?</div>
+                </div>
+            </div>
+        </section>
+        <section id="abilities">
+            <div class="container">
+                <div class="abilities__picture">
+                    <picture>
+                        <source type="image/webp" srcset="images/grocery_abilities_bg_mobile.webp" media="(max-width: 767px)">
+                        <source srcset="images/grocery_abilities_bg_mobile.png" media="(max-width: 767px)">
+                        <source type="image/webp" srcset="images/grocery_abilities_bg.webp" media="(min-width: 1199px)">
+                        <source srcset="images/grocery_abilities_bg.png" media="(min-width: 1199px)">
+                        <img src="images/grocery_abilities_bg.png" alt="Голосовой ассистент Kvint">
+                    </picture>
+                </div>
+                <div class="abilities__list">
+                    <h2>Голосовой диалог<br> <span class="highlighted">с ассистентом Kvint</span> <br> обеспечивает</h2>
+                    <div class="abilities__block">
+                        <p>Поиск по каталогу товаров </p>
+                        <img src="images/grocery_abilities_icon1.svg" alt="Поиск по каталогу">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Удобное оформление покупки</p>
+                        <img src="images/grocery_abilities_icon2.svg" alt="Удобное оформление покупки">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Быструю навигацию по приложению</p>
+                        <img src="images/grocery_abilities_icon3.svg" alt="Быстрая навигация">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Возможность совмещать покупки с другими делами</p>
+                        <img src="images/grocery_abilities_icon4.svg" alt="Совмещение покупки с другими делами">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Акцентирование внимания на индивидуальных предложениях</p>
+                        <img src="images/grocery_abilities_icon5.svg" alt="Индивидуальные предложения">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Напоминание о незавершенных заказах</p>
+                        <img src="images/grocery_abilities_icon6.svg" alt="Напоминание о незавершенных заказах">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Заполнение форм заказа (адрес доставки, контакты)</p>
+                        <img src="images/grocery_abilities_icon7.svg" alt="Заполнение форм заказа">
+                    </div>
+                    <div class="abilities__block">
+                        <p>Интерактивное взаимодействие с приложением</p>
+                        <img src="images/grocery_abilities_icon8.svg" alt="Интерактивное взаимодействие">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="customer_advantages">
+            <div class="container">
+                <div class="advantages__wrap">
+                    <h2>5 ПРЕИМУЩЕСТВ<br> Kvint для <span class="highlighted">покупателя</span></h2>
+                    <div class="advantages__block">
+                        <span class="title">Дополнительный комфорт</span>
+                        <p class="subtitle">при совершении покупок<br> в мобильных приложениях</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon1.svg" alt="Дополнительный комфорт">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Быстрота и скорость</span>
+                        <p class="subtitle">при оформлении<br> заказа</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon2.svg" alt="Быстрота и скорость">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Возможность услышать <br class="no-xs"> о новинках и акциях </span>
+                        <p class="subtitle">в магазинах не тратя время на поиск</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon3.svg" alt="Возможность услышать о новинках и акциях">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Совмещение покупок <br class="no-xs"> с другими делами: </span>
+                        <p class="subtitle">вождение, прогулки, занятия спортом</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon4.svg" alt="Совмещение покупок с другими делами">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Упрощение<br> навигации</span>
+                        <p class="subtitle">для людей с ограниченными<br> возможностями</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon5.svg" alt="Упрощение навигации">
+                        </div>
+                    </div>
+                    <div class="cloud">“Голосовая коммерция — новый тренд рынка”</div>
+                </div>
+            </div>
+        </section>
+        <section id="business_advantages">
+            <div class="container">
+                <div class="advantages__wrap">
+                    <h2>5 ПРЕИМУЩЕСТВ<br> Kvint для <span class="highlighted">бизнеса</span></h2>
+                    <div class="advantages__block">
+                        <span class="title">Увеличение потока<br> пользователей</span>
+                        <p class="subtitle">за счет улучшения качества <br class="no-xs"> клиентского опыта</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon6.svg" alt="Увеличение потока пользователей">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Конкурентное преимущество</span>
+                        <p class="subtitle">благодаря использованию передовых технологий на основе искусственного интелекта</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon7.svg" alt="Конкурентное преимущество">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Увеличение доли <br class="no-xs"> завершенных покупок</span>
+                        <p class="subtitle">благодаря целеориентированному диалогу</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon8.svg" alt="Увеличение доли завершенных покупок">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Увеличение среднего чека </span>
+                        <p class="subtitle">за счет UPSALE и озвучивания индивидуальных предложений</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon9.svg" alt="Увеличение среднего чека ">
+                        </div>
+                    </div>
+                    <div class="advantages__block">
+                        <span class="title">Повышение лояльности покупателей </span>
+                        <p class="subtitle">за счет интерактивного взаимодействия с приложением</p>
+                        <div class="advantages__block--icon">
+                            <img src="images/grocery_custom_adv_icon10.svg" alt="Повышение лояльности покупателей ">
+                        </div>
+                    </div>
+                    <div class="cloud">“Голосовое взаимодействие постепенно заменяет TouchScreen, мышку и клавиатуру”</div>
+                </div>
+            </div>
+        </section>
+        <section id="statistics">
+            <div class="container">
+                <h2>Почему стоит внедрить Kvint сейчас</h2>
+                <div class="statistics__wrap">
+                    <div class="statistics__block">
+                        <div class="statistics__block--inner">
+                            <span class="title"><span class="counter" data-counter="30">1</span>%</span>
+                            <p>Около 30% продаж мировой электронной коммерции будет осуществляться за счет <span class="highlighted">голосовой торговли*</span></p>
+                        </div>
+                        <p class="statistics__block--hint no-xs">*По исследованию Делойт</p>
+                    </div>
+                    <div class="statistics__block">
+                        <div class="statistics__block--inner">
+                            <span class="title"><span class="counter" data-counter="49">1</span>-<span class="counter" data-counter="52">1</span>%</span>
+                            <p>Торговля через <span class="highlighted">мобильные приложения</span> сегодня генерируют порядка половины всех продаж (от 49 до 52%)**</p>
+                        </div>
+                        <p class="statistics__block--hint no-xs">**Анализ 5 000 веб-ритейлеров в 80 странах мира. По исследованию Criteo</p>
+                    </div>
+                    <div class="statistics__block">
+                        <div class="statistics__block--inner">
+                            <span class="title"><span class="counter" data-counter="52">1</span>%</span>
+                            <p>Около половины пользователей мобильных приложений (52%) используют <span class="highlighted">голосовой поиск во время вождения</span></p>
+                        </div>
+                    </div>
+                    <p class="statistics__block--hint xs">*По исследованию Делойт</p>
+                    <p class="statistics__block--hint xs">**Анализ 5 000 веб-ритейлеров в 80 странах мира. По исследованию Criteo</p>
+                    <div class="cloud">Предпосылки и тенденции рынка</div>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="container">
+                <h2>Новости</h2>
+                <div class="news__wrap">
+                    <div class="news__main">
+                        <div class="news__item">
+                            <a href="javascript:void(0);">
+                                <span class="news__item--img">
+                                    <img src="images/news1.jpeg" alt="15 причин подключить виртуального оператора">
+                                </span>
+                                <span class="news__item--date">
+                                    <span class="highlighted">20</span> Январь, 2019
+                                </span>
+                                <span class="news__item--label">Актуально</span>
+                                <span class="news__item--title">
+                                    <span class="title">15 причин подключить виртуального оператора</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news__column">
+                        <div class="news__item">
+                            <a href="javascript:void(0);">
+                                <span class="news__item--img">
+                                    <img src="images/news2.jpg" alt="Технические возможности виртуального оператора">
+                                </span>
+                                <span class="news__item--date">
+                                    <span class="highlighted">15</span> Март, 2019
+                                </span>
+                                <span class="news__item--label">Актуально</span>
+                                <span class="news__item--title">
+                                    <span class="title">Технические возможности виртуального оператора</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="news__item">
+                            <a href="javascript:void(0);">
+                                <span class="news__item--img">
+                                    <img src="images/news3.jpeg" alt="15 причин подключить виртуального оператора">
+                                </span>
+                                <span class="news__item--date">
+                                    <span class="highlighted">04</span> Февраль, 2019
+                                </span>
+                                <span class="news__item--label">Технологии</span>
+                                <span class="news__item--title">
+                                    <span class="title">15 причин подключить виртуального оператора</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__row">
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                            <span class="news__item--img">
+                                <img src="images/news4.jpeg" alt="15 причин подключить виртуального оператора">
+                            </span>
+                            <span class="news__item--info">
+                                <span class="news__item--row">
+                                    <span class="news__item--date">
+                                        30 Января 2019
+                                    </span>
+                                    <span class="news__item--label" data-label="actual">Актуально</span>
+                                </span>
+                                <span class="news__item--title">
+                                    <span class="title">15 причин подключить виртуального оператора</span>
+                                </span>
+                                <span class="news__item--arrow">
+                                    <img src="images/news_arrow.svg" alt="Перейти">
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                            <span class="news__item--img">
+                                <img src="images/news4.jpeg" alt="Технические возможности виртуального оператора">
+                            </span>
+                            <span class="news__item--info">
+                                <span class="news__item--row">
+                                    <span class="news__item--date">
+                                        30 Января 2019
+                                    </span>
+                                    <span class="news__item--label">Технологии</span>
+                                </span>
+                                <span class="news__item--title">
+                                    <span class="title">Технические возможности виртуального оператора</span>
+                                </span>
+                                <span class="news__item--arrow">
+                                    <img src="images/news_arrow.svg" alt="Перейти">
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                            <span class="news__item--img">
+                                <img src="images/news4.jpeg" alt="15 причин подключить виртуального оператора">
+                            </span>
+                            <span class="news__item--info">
+                                <span class="news__item--row">
+                                    <span class="news__item--date">
+                                        30 Января 2019
+                                    </span>
+                                    <span class="news__item--label" data-label="actual">Актуально</span>
+                                </span>
+                                <span class="news__item--title">
+                                    <span class="title">15 причин подключить виртуального оператора</span>
+                                </span>
+                                <span class="news__item--arrow">
+                                    <img src="images/news_arrow.svg" alt="Перейти">
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__mobile">
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                            <span class="news__item--img">
+                                <img src="images/news2.jpg" alt="15 причин подключить виртуального оператора">
+                            </span>
+                            <span class="news__item--date">
+                                <span class="highlighted">15</span> Март, 2019
+                            </span>
+                            <span class="news__item--label">Актуально</span>
+                            <span class="news__item--title">
+                                <span class="title">15 причин подключить виртуального оператора</span>
+                            </span>
+                            <span class="news__item--arrow">
+                                <img src="images/news_item_arrow_white.svg" alt="Перейти">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                                <span class="news__item--img">
+                                    <img src="images/news3.jpeg" alt="15 причин подключить виртуального оператора">
+                                </span>
+                            <span class="news__item--date">
+                                    <span class="highlighted">04</span> Февраль, 2019
+                                </span>
+                            <span class="news__item--label">Технологии</span>
+                            <span class="news__item--title">
+                                    <span class="title">15 причин подключить виртуального оператора</span>
+                                </span>
+                        </a>
+                    </div>
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                            <span class="news__item--img">
+                                <img src="images/news2.jpg" alt="15 причин подключить виртуального оператора">
+                            </span>
+                            <span class="news__item--date">
+                                <span class="highlighted">15</span> Март, 2019
+                            </span>
+                            <span class="news__item--label">Актуально</span>
+                            <span class="news__item--title">
+                                <span class="title">15 причин подключить виртуального оператора</span>
+                            </span>
+                            <span class="news__item--arrow">
+                                <img src="images/news_item_arrow_white.svg" alt="Перейти">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                                <span class="news__item--img">
+                                    <img src="images/news3.jpeg" alt="15 причин подключить виртуального оператора">
+                                </span>
+                            <span class="news__item--date">
+                                    <span class="highlighted">04</span> Февраль, 2019
+                                </span>
+                            <span class="news__item--label">Технологии</span>
+                            <span class="news__item--title">
+                                    <span class="title">15 причин подключить виртуального оператора</span>
+                                </span>
+                        </a>
+                    </div>
+                    <div class="news__item">
+                        <a href="javascript:void(0);">
+                            <span class="news__item--img">
+                                <img src="images/news2.jpg" alt="15 причин подключить виртуального оператора">
+                            </span>
+                            <span class="news__item--date">
+                                <span class="highlighted">15</span> Март, 2019
+                            </span>
+                            <span class="news__item--label">Актуально</span>
+                            <span class="news__item--title">
+                                <span class="title">15 причин подключить виртуального оператора</span>
+                            </span>
+                            <span class="news__item--arrow">
+                                <img src="images/news_item_arrow_white.svg" alt="Перейти">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <div class="container">
+                <div class="form__picture">
+                    <div class="form__picture--front">
+                        <picture>
+                            <source type="image/webp" srcset="images/grocery_form_bg.webp" media="(min-width: 1200px)">
+                            <source srcset="images/grocery_form_bg.png" media="(min-width: 1200px)">
+                            <img src="images/grocery_form_bg.png" alt="Kvint">
+                        </picture>
+                    </div>
+                </div>
+                <h2>Хочешь узнать больше <br class="no-xs"> о Голосовом ассистенте Kvint?</h2>
+                <p>Оставьте ваши контакты - наш менеджер свяжется с Вами и ответит на интересующие вопросы.</p>
+                <form>
+                    <div class="form__field" data-field="name">
+                        <label>
+                            <img src="images/form_name_icon.svg" alt="Имя">
+                            <input type="text" name="NAME" placeholder="Имя..." required>
+                        </label>
+                    </div>
+                    <div class="form__field" data-field="phone">
+                        <label>
+                            <img src="images/form_phone_icon.svg" alt="Телефон">
+                            <input type="tel" name="PHONE" placeholder="+7 (999) 999 99 99" required>
+                        </label>
+                    </div>
+                    <div class="form__field" data-field="email">
+                        <label>
+                            <img src="images/form_email_icon.svg" alt="Электронная почта">
+                            <input type="email" name="EMAIL" placeholder="E-mail..." required>
+                        </label>
+                    </div>
+                    <button class="leave-request j-leave-request is-blicked">
+                        <span>Оставить заявку</span>
+                        <span class="button--bg"></span>
+                    </button>
+                    <p class="confirm">
+                        Нажимая на кнопку, Вы даете согласие на <a href="javascript:void(0);" target="_blank">обработку своих персональных данных</a>
+                    </p>
+                </form>
+                <div class="form__footer">
+                    <div class="footer__left">
+                        <p>По всем вопросам звоните нам: <a href="tel:+74992881890" title="+7 (499) 288-18-90">+7 (499) 288-18-90</a></p>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__partners">
+                            <a href="https://sk.ru/" class="footer__partner">
+                                <img src="images/skolkovo_logo.png" alt="Sk - Сколково">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="social__list no-md">
+            <div class="socials__item">
+                <a target="blank" href="https://www.youtube.com/channel/UCfdFA-DstMHW_hKxezmMuog">
+                    <img src="images/youtube.svg" alt="Youtube">
+                </a>
+            </div>
+            <div class="socials__item">
+                <a target="_blank" href="https://twitter.com/Kvint39802740">
+                    <img src="images/twitter.svg" alt="Twitter">
+                </a>
+            </div>
+            <div class="socials__item">
+                <a target="blank" href="https://instagram.com/kvint.io">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="socials__item">
+                <a target="blank" href="https://www.facebook.com/kvint.io">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+        </div>
+
+        <div class="sections__nav no-md">
+            <ul></ul>
+        </div>
+
+        <div class="wrapper--shadow"></div>
+        <div class="popup" data-popup="presentation">
+            <div class="popup__close"></div>
+            <p class="popup__title no-xs">Оставить заявку на презентацию виртуального <span class="highlighted">оператора KVINT!</span></p>
+            <p class="popup__title xs">Оставить заявку на презентацию <span class="highlighted">оператора KVINT!</span></p>
+            <p class="popup__info">Отправьте заявку и мы в ближайшее время свяжемся с Вами и подробнее расскажем вам про возможности сервиса</p>
+            <form>
+                <div class="form__field" data-field="name">
+                    <label>
+                        <img src="images/form_name_icon.svg" alt="Имя">
+                        <input type="text" name="NAME" placeholder="Имя..." required>
+                    </label>
+                </div>
+                <div class="form__field" data-field="phone">
+                    <label>
+                        <img src="images/form_phone_icon.svg" alt="Телефон">
+                        <input type="tel" name="PHONE" placeholder="+7 (999) 999 99 99" required>
+                    </label>
+                </div>
+                <div class="form__field" data-field="email">
+                    <label>
+                        <img src="images/form_email_icon.svg" alt="Электронная почта">
+                        <input type="email" name="EMAIL" placeholder="E-mail..." required>
+                    </label>
+                </div>
+                <button class="leave-request j-leave-request is-blicked">
+                    <span>Оставить заявку</span>
+                    <span class="button--bg"></span>
+                </button>
+                <p class="confirm">
+                    Нажимая на кнопку, Вы даете согласие на <a href="javascript:void(0);" target="_blank">обработку своих персональных данных</a>
+                </p>
+            </form>
+        </div>
+
+        <div class="popup__menu">
+            <div class="popup__menu--inner">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span>Продукты</span>
+                            </a>
+                        </li>
+                        <li class="level2"><a href="promotion.html">Мобильный ассистент для продвижения товаров и услуг</a></li>
+                        <li class="level2"><a href="grocery_retail.html">Голосовой ассистент для продуктового ритейла</a></li>
+                        <li class="level2"><a href="ivr.html">Виртуальный ассистент для замены IVR</a></li>
+                        <li class="level2"><a href="call_center.html">Виртуальный колл-центр с готовыми сценариями</a></li>
+                        <li>
+                            <a href="#news">
+                                <span>Новости</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#form">
+                                <span>Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="popup__menu--bottom">
+                    <div class="popup__menu--language">
+                        <a href="#" class="active">
+                            <span>Ru</span>
+                        </a>
+                        <div class="popup__language--separator">|</div>
+                        <a href="#">
+                            <span>En</span>
+                        </a>
+                    </div>
+                    <div class="popup__menu--social">
+                        <div class="socials__item">
+                            <a target="blank" href="https://www.facebook.com/kvint.io">
+                                <img src="images/facebook.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a target="blank" href="https://instagram.com/kvint.io">
+                                <img src="images/instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a target="_blank" href="https://twitter.com/Kvint39802740">
+                                <img src="images/twitter.svg" alt="Twitter">
+                            </a>
+                        </div>
+                        <div class="socials__item">
+                            <a target="blank" href="https://www.youtube.com/channel/UCfdFA-DstMHW_hKxezmMuog">
+                                <img src="images/youtube.svg" alt="Youtube">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popup__menu--phone">
+                        <a href="tel:+74992881890" title="+7 (499) 288-18-90">+7 (499) 288-18-90</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__right">
+                <div class="footer__languages">
+                    <p>This site has<br> multiple <span class="highlighted">languages</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+
+<script src="js/script-lib.js"></script>
+<script src="js/script.js"></script>
+
+</html>
