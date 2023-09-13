@@ -1140,7 +1140,8 @@ section#calls .products__picture--bg-front {
     z-index: 1;
 }
 
-section#promotion .products__picture--bg-front video {
+section#promotion .products__picture--bg-front video,
+.main-page section#promotion .products__picture video {
     width: auto;
     background: transparent;
     height: 100%;
@@ -5041,7 +5042,8 @@ main[data-main="grocery"] section#form .form__picture {
         left: calc(50% + 28px);
     }
 
-    section#promotion .products__picture--bg-front video {
+    section#promotion .products__picture--bg-front video,
+    .main-page section#promotion .products__picture video {
         width: 100%;
         height: auto;
     }
